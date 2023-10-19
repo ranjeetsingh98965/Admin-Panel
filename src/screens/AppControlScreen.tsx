@@ -8,6 +8,7 @@ import {
   Dimensions,
 } from 'react-native';
 import DashboardSettings from '../components/DashboardSettings';
+import NotAuthorizeModal from '../components/modals/NotAuthorizeModal';
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
@@ -32,6 +33,11 @@ const AppControlScreen = () => {
   };
   return (
     <>
+      <NotAuthorizeModal
+        height={windowHeight}
+        width={windowWidth}
+        visible={false}
+      />
       <View style={styles.bgCont}>
         <Image
           source={require('../images/bg.png')}

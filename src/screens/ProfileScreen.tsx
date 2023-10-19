@@ -9,7 +9,7 @@ import {
   Dimensions,
 } from 'react-native';
 import UserDetailField from '../components/UserDetailField';
-import UpdateProfileModal from '../components/UpdateProfileModal';
+import UpdateProfileModal from '../components/modals/UpdateProfileModal';
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
@@ -23,6 +23,7 @@ const ProfileScreen = () => {
 
   return (
     <>
+      {/* ######## UpdateProfileModal #######*/}
       <UpdateProfileModal
         visible={showUpdateProfileModal}
         width={windowWidth}

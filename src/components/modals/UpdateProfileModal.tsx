@@ -73,7 +73,7 @@ const UpdateProfileModal = props => {
             {/* ##### edit icon Image  ##### */}
 
             <Image
-              source={require('../icons/edit.png')}
+              source={require('../../icons/edit.png')}
               style={{
                 width: 27,
                 height: 27,
